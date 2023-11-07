@@ -25,7 +25,7 @@ btnDispari.addEventListener("click", function () {
 
 // funzione per generare un numero casuale per la CPU
 function cpuRndNumber() {
-    return Math.floor(Math.random() * 100) + 1;
+    return Math.floor(Math.random() * 5) + 1;
 }
 
 // event listeners al pulsante di invio del numero inserito dall'utente
