@@ -1,13 +1,15 @@
 const inputElement = document.getElementById('inputWord');
 const submitBtn = document.getElementById('submitBtn');
+const resultWord = document.getElementById('resultWord')
 
 submitBtn.addEventListener("click", function () {
     const inputValue = inputElement.value;
     
     if (wordChecker(inputValue)) {
-        console.log("È un palindromo!");
+        resultWord.textContent = "È un palindromo!";
     } else {
         console.log("Non è un palindromo.");
+        resultWord.textContent = "Non è un palindromo!";
     }
 });
 

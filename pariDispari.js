@@ -30,6 +30,7 @@ function cpuRndNumber() {
 
 // event listeners al pulsante di invio del numero inserito dall'utente
 submitBtnNumber.addEventListener("click", function () {
+    
     // prendiamo il numero dell'utente, il numero casuale della CPU e li sommiamo
     const userNumber = parseInt(numberInput.value);
     const cpuNumber = cpuRndNumber();
